@@ -1,3 +1,9 @@
+
+# Originally from: https://github.com/brandonstarxel/chunking_evaluation
+# Author: Brandon Starxel
+# License: MIT License
+# Modified by Faeze Abdoli for use in semantic-chunking-rag
+
 from .base_chunker import BaseChunker
 from typing import List
 
