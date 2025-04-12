@@ -1,10 +1,10 @@
-# Semantic Chunking in RAG
+# Duriri - Semantic Chunking in RAG
 
-This repository showcases a structured codebase using **semantic chunking** in the context of **Retrieval-Augmented Generation (RAG)**. Instead of splitting content arbitrarily, we organize and chunk information based on meaning, context, and relevance to improve the quality of retrieval and generation.
+This repository demonstrates the use of **semantic chunking** in the context of **Retrieval-Augmented Generation (RAG)**. The goal is to improve the quality of retrieval and generation tasks by chunking information based on **meaning** and **context** rather than arbitrary sizes. This enhances the relevance and coherence of the information retrieved, especially in tasks like question-answering, summarization, and document retrieval.
 
 ## 🔍 What is Semantic Chunking?
 
-Semantic chunking means dividing content or code into **meaningful segments**, not just by size or lines. In the RAG pipeline, this ensures:
+**Semantic chunking** involves dividing content into meaningful units (chunks) based on their semantic or contextual relevance, rather than simply splitting them by size (like token count). In the RAG pipeline, this improves:
 
 - More accurate retrieval of context-relevant documents
 - Better performance in question-answering and summarization tasks
@@ -12,10 +12,16 @@ Semantic chunking means dividing content or code into **meaningful segments**, n
 
 ## 🧠 Why Use Semantic Chunking in RAG?
 
-Traditional RAG implementations often split documents into equal-sized chunks (e.g., 500 tokens), which can break context mid-thought. Semantic chunking keeps logical units (like paragraphs, sections, or complete ideas) together, preserving meaning and coherence.
+Traditional RAG systems often split documents into equal-sized chunks, which can result in lost context (e.g., breaking up a paragraph or idea into smaller chunks). By using **semantic chunking**, the context is preserved, leading to:
 
-This is crucial for:
-- Long document Q&A
-- Context-aware generation
-- Legal, technical, or educational content retrieval
+- **Long document Q&A:** Ensuring full context is available for accurate answers.
+- **Context-aware generation:** Retaining relevant context during generation tasks.
+- **Legal, technical, or educational content retrieval:** Maintaining critical meaning in specialized content.
 
+## 🧩 Key Components of This Repository
+
+- **`cluster_semantic_chunker.py`**: Implementation of semantic chunking using clustering techniques to divide documents into meaningful chunks.
+- **`kamradt_modified_chunker.py`**: A modified chunker for more specific use cases, adjusting semantic chunking techniques.
+- **`semantic_chunking_clustring_HDBSCAN.ipynb`**: A Jupyter notebook demonstrating semantic chunking using **HDBSCAN** (Hierarchical Density-Based Spatial Clustering of Applications with Noise).
+- **`semantic_chunking_clustring_kmeans.ipynb`**: A Jupyter notebook demonstrating semantic chunking using **KMeans clustering**.
+  
