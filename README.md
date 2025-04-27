@@ -24,4 +24,5 @@ Traditional RAG systems often split documents into equal-sized chunks, which can
 - **`kamradt_modified_chunker.py`**: A modified chunker for more specific use cases, adjusting semantic chunking techniques.
 - **`semantic_chunking_clustring_HDBSCAN.ipynb`**: A Jupyter notebook demonstrating semantic chunking using **HDBSCAN** (Hierarchical Density-Based Spatial Clustering of Applications with Noise).
 - **`semantic_chunking_clustring_kmeans.ipynb`**: A Jupyter notebook demonstrating semantic chunking using **KMeans clustering**.
+- **`SemanticSplitGenerator`**: Embedding-based dynamic chunking using cosine similarity and adaptive breakpoints. Ideal for:- Sentence-level semantic boundaries- Configurable length/similarity thresholds - Built-in summarization support.
   
