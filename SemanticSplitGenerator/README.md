@@ -65,3 +65,5 @@ semantic_cluster_bounds = semantic_chunker.split_visualizer.plot_corpus_and_clus
     splits_df, cluster_summaries
 )
 ```
+## references
+https://github.com/rmartinshort/text_chunking
